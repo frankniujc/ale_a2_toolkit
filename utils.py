@@ -23,7 +23,7 @@ def main():
             if (not line[0] == '%') and (line.strip()):
                 true_false = ']).'
                 if line[0] == '*':
-                    true_false = '],false).'
+                    true_false = '],fails).'
                 sentesce = 'test_sent(['
                 for s in line.strip().replace('*', '').split():
                     sentesce += s + ','
